@@ -1,0 +1,79 @@
+.conteiner{
+    text-align: center;
+    position: relative;
+}
+
+
+.letra {
+    width: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+    /* display:none;   */
+}
+
+#forca {
+    position: absolute;
+    left: 150px;
+}
+
+#cabeça {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 250px;
+    left: 750px;
+
+}
+
+#corpo {
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    top: 400px;
+    left: 770px;
+}
+
+#braçoD {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 420px;
+    left: 870px;
+}
+
+#braçoE {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 420px;
+    left: 670px;
+}
+
+#pernaE {
+    height: 200px;
+    width: 110px;
+    position: absolute;
+    top: 600px;
+    left: 710px;
+}
+
+#pernaD {
+    height: 200px;
+    width: 110px;
+    position: absolute;
+    top: 600px;
+    left: 820px;
+}
+
+#cabeçaPER{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 250px;
+    left: 750px;
+}
+.display {
+    display: block;
+}
