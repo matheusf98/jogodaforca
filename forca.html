@@ -4,17 +4,15 @@
             <meta charset="UTF-8">
             <title>jogo da forca</title>
             <link rel="stylesheet" href="estiloforca.css">
-            
-            
-            
         </head>
-        
         <body>
             <div class="conteiner">
-                <div id="menu" class="display">
+                <div id="dvmenu" class="dvdisplay">
                     <button onclick="iniciar()">Nova palavra</button>
                 </div>
-            
+                <div>
+                <div id="dvpalavra" class="dvdisplay">
+                    <input type="text" id="letra0" class="letra" maxlength="1">
                     <input type="text" id="letra1" class="letra" maxlength="1">
                     <input type="text" id="letra2" class="letra" maxlength="1">
                     <input type="text" id="letra3" class="letra" maxlength="1">
@@ -34,31 +32,27 @@
                     <input type="text" id="letra17" class="letra" maxlength="1">
                     <input type="text" id="letra18" class="letra" maxlength="1">
                     <input type="text" id="letra19" class="letra" maxlength="1">
-                    <input type="text" id="letra20" class="letra" maxlength="1">
-                
-                
-                <div id="jogador" class="display">
-                    <div id="controle">
-                        <input type="text" id="letrajog" class="letrajog" maxlength="1">
-                        <button onclick="jogar()">Jogar</button>
-                        <button onclick="Tema()">Tema</button>
-                        
-                        <div id="msg"></div><br><br>
-                        <div id="letrasdigi">Letras Digitadas:</div>
-                    </div>
                 </div>
 
-                <div id="forca">
-                    <img id="cabeça" src="img/cabeça.jpg"> 
-                    <img id="corpo" src="img/corpo.jpg">
-                    <img id="braçoD" src="img/braçod.jpg">
-                    <img id="braçoE" src="img/braçoe.jpg">
-                    <img id="pernaE" src="img/pernae.jpeg">
-                    <img id="pernaD" src="img/pernad.jpeg">
-                    <img id="cabeçaPER" src="img/cabeçaperdeu.jpg">
+                <div id="dvjogador" class="dvdisplay">
+                        <div id="controleJogador">
+                            <input type="text" id="letraj" class="letraj" maxlength="1">
+                            <button onclick="jogar()">Jogar</button>
+                            <button onclick="dica()">dica</button>
+                            <div id="dvmsg"></div><br>
+                            <div id="dvletrasdigitada">Letras Digitadas:</div>
+                        </div>
+                    <div id="forca">
+                        <img id="cabeça" src="img/cabeça.jpg"> 
+                        <img id="corpo" src="img/corpo.jpg">
+                        <img id="braçoD" src="img/braçod.jpg">
+                        <img id="braçoE" src="img/braçoe.jpg">
+                        <img id="pernaE" src="img/pernae.jpeg">
+                        <img id="pernaD" src="img/pernad.jpeg">
+                        <img id="cabeçaPER" src="img/cabeçaperdeu.jpg"> 
+                    </div>
                 </div>
             </div>
-            
-            <link rel="stylesheet" href="forca.js">
+            <script src="forca.js"></script>
         </body>
     </html>

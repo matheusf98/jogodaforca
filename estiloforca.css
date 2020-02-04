@@ -5,17 +5,29 @@
 
 
 .letra {
+    width: 50px;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5px;
+    display:none;   
+}
+
+.letraJ{
     width: 30px;
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
     margin: 5px;
-    /* display:none;   */
+}
+
+.dvdisplay{
+    display: block;
 }
 
 #forca {
     position: absolute;
-    left: 150px;
+    left: 350px;
 }
 
 #cabeça {
@@ -67,13 +79,10 @@
     left: 820px;
 }
 
-#cabeçaPER{
+ #cabeçaPER{
     height: 150px;
     width: 150px;
     position: absolute;
     top: 250px;
     left: 750px;
-}
-.display {
-    display: block;
 }
