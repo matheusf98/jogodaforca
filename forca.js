@@ -26,19 +26,11 @@ function inicia() {
     tam=palavra.length;
     defineletras(tam);
     document.getElementById("dvmsg").innerHTML="";
-    desenhos[1]=document.getElementById("cabeça");
-    desenhos[2]=document.getElementById("corpo");
-    desenhos[3]=document.getElementById("braçoD");
-    desenhos[4]=document.getElementById("braçoE");
-    desenhos[5]=document.getElementById("pernaE");
-    desenhos[6]=document.getElementById("pernaD");
-    document.getElementById("cabeça").src="img/cabeçaperdeu.jpg";
+   
     for(var i=1;i<7;i++){
-        desenhos[i].style.display="none";
+        desenhos[i].style.display="block";
     }
 }
-
-
 function defineletras(l) {
     var obj;
     for(var i=0;i<20;i++) {
@@ -49,7 +41,6 @@ function defineletras(l) {
         obj=document.getElementById("letra"+i).style.display="inline-block";
     }
 }
-
 function jogar() {
     jog.focus();
     if (jog.Value=="") {
@@ -76,7 +67,7 @@ function jogar() {
                 document.getElementById("forca").innerHTML+=letra.toUpperCase() + " ";
                 erros++;
                 if (erros<7) {
-                    desenhos[erros].style.display="block";
+                    desenhos[erros].style.display="none";
                 }else{
                     document.getElementById("forca").src="img/cabeçaperdeu.jpg";
                     document.getElementById("dvmsg").innerHTML="PERDEU";
